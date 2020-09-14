@@ -7,7 +7,7 @@ import sys
 
 app = Flask(__name__)
 
-# Load configurations from environment or config file
+# Load configurations from environment or config file. Loading is OK
 app.config.from_pyfile('config_file.cfg')
 
 if ("VOTE1VALUE" in os.environ and os.environ['VOTE1VALUE']):
